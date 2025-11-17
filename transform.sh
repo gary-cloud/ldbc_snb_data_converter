@@ -4,7 +4,7 @@ set -eu
 set -o pipefail
 
 DUCKDB_PATH="${DUCKDB_PATH:=.}"
-BULK_LOAD_DATE="2011-01-01"
+BULK_LOAD_DATE="${BULK_LOAD_DATE:-2011-01-01}"
 
 echo "transform data from raw to composite-merged-fk format"
 
